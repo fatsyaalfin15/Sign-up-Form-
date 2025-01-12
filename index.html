@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Sign-up Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Norse&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <img src="assets/icon/odin-lined.png" alt="Logo Odin" class="logo" />
+        <h1 class="logo-text">ODIN</h1>
+        <p><strong>Image by David Lang on Unsplash</strong></p>
+      </aside>
+
+      <main class="main-content">
+        <!-- Paragraf di atas form -->
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Phasellus non quam vel nunc sodales elementum non ac lorem. 
+          Sed a turpis nec risus pharetra aliquet.
+        </p>
+
+        <h2>Let's do this!</h2>
+
+        <form class="form" action="#" method="POST" novalidate>
+          <h2>Registration Form</h2>
+
+          <!-- Form untuk First Name -->
+          <label for="first-name">First Name:</label>
+          <input
+            type="text"
+            id="first-name"
+            name="first-name"
+            placeholder="Enter First Name"
+            minlength="2"
+            maxlength="30"
+            required
+          />
+
+          <!-- Form untuk Last Name -->
+          <label for="last-name">Last Name:</label>
+          <input
+            type="text"
+            id="last-name"
+            name="last-name"
+            placeholder="Enter Last Name"
+            minlength="2"
+            maxlength="30"
+            required
+          />
+
+          <!-- Form untuk Phone Number -->
+          <label for="phone-number">Phone Number:</label>
+          <input
+            type="tel"
+            id="phone-number"
+            name="phone-number"
+            placeholder="Enter Phone Number"
+            pattern="[0-9]{10,15}"
+            title="Phone number must be 10-15 digits"
+            required
+          />
+
+          <!-- Form Password -->
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Input Password"
+            minlength="8"
+            maxlength="64"
+            required
+          />
+
+          <!-- Form Confirm Password -->
+          <label for="confirm-password">Confirm Password:</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            placeholder="Confirm Password"
+            minlength="8"
+            maxlength="64"
+            required
+          />
+
+          <button type="submit" class="button">Create Account</button>
+          <p class="signin-link"><strong>
+            Already have an account? <a href="signin.html">Sign in</a></strong>
+          </p>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
